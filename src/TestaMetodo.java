@@ -3,18 +3,18 @@ public class TestaMetodo {
         Conta contaMaria = new Conta();
         contaMaria.deposita(200);
         contaMaria.deposita(50);
-        System.out.println(contaMaria.pegaSaldo());
+        System.out.println(contaMaria.getSaldo());
 
         boolean saqueRetorno = contaMaria.saca(260);
-        System.out.println(contaMaria.pegaSaldo());
+        System.out.println(contaMaria.getSaldo());
         System.out.println(saqueRetorno);
 
         Conta contaJoao = new Conta();
         contaJoao.deposita(120);
 //        contaJoao.transfere(20, contaMaria);
         boolean transfereSucesso = contaJoao.transfere(20, contaMaria);
-        System.out.println("Saldo da conta Joao: " + contaJoao.pegaSaldo());
-        System.out.println("Saldo da conta Maria: " + contaMaria.pegaSaldo());
+        System.out.println("Saldo da conta Joao: " + contaJoao.getSaldo());
+        System.out.println("Saldo da conta Maria: " + contaMaria.getSaldo());
         System.out.println(transfereSucesso);
 
 //        Composição de Objetos

@@ -6,12 +6,12 @@ public class TesteRerencias {
 
         Conta segundaConta = primeiraConta;
 
-        System.out.println(segundaConta.pegaSaldo());
+        System.out.println(segundaConta.getSaldo());
 
         segundaConta.deposita(100);
 
-        System.out.println(segundaConta.pegaSaldo());
-        System.out.println(primeiraConta.pegaSaldo());
+        System.out.println(segundaConta.getSaldo());
+        System.out.println(primeiraConta.getSaldo());
 
         if(primeiraConta == segundaConta) {
             System.out.println("As contas são identicas.");
